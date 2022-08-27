@@ -1,4 +1,5 @@
 import React from 'react';
+import './AddBook.css';
 
 const AddBook = () => (
   <div className="add-book-section">
