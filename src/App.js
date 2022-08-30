@@ -1,21 +1,21 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import NavBar from './components/NavBar';
-import Footer from './components/Footer';
-import BooksPage from './Pages/BooksPage';
 import CategoriesPage from './Pages/CategoriesPage';
+import BookContainer from './components/BookContainer';
 import './App.css';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
+    <>
+    <NavBar/>
     <main>
-      <NavBar />
       <Routes>
-        <Route path="/" element={<BooksPage />} />
+        <Route path="/" element={<BookContainer />} />
         <Route path="Categories" element={<CategoriesPage />} />
       </Routes>
-      <Footer />
     </main>
+    </>
   );
 }
 

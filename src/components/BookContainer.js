@@ -1,3 +1,7 @@
+import React from 'react';
+import BookList from './BookList';
+import InputBook from './InputBook';
+
 const bookList = [
   {
     book_id: 'book id 1',
@@ -24,4 +28,13 @@ const bookList = [
     category: 'Fiction',
   },
 ];
-export default bookList;
+function BookContainer() {
+  return (
+    <div>
+      <BookList bookList={bookList} />
+      <InputBook />
+    </div>
+  );
+}
+
+export default BookContainer;

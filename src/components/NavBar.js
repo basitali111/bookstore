@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './NavBar.css';
-import userLogo from '../assets/user.png';
 
 const NavBar = () => (
   <div className="wrapper">
@@ -11,9 +9,6 @@ const NavBar = () => (
         <li><Link to="/"> Books </Link></li>
         <li><Link to="/Categories"> Categories </Link></li>
       </ul>
-      <div className="user-logo">
-        <img src={userLogo} alt="user icon" />
-      </div>
     </nav>
   </div>
 );
