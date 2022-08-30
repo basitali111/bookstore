@@ -1,22 +1,19 @@
+/* eslint-disable */ 
 import React from 'react';
 
 function BookItem(props) {
-  console.log(props);
-  const {  author, title } = props.book;
-  console.log('Author:', author);
-  console.log('title:', title);
-
+  const { author, title } = props.book;
   return (
-    <li >
+    <li>
       <div>
         <p>Actions</p>
         <h2>{title}</h2>
         <p>{author}</p>
       </div>
       <div>
-        <button>comments</button>
+        <p>comments</p>
         <button type="button">Remove</button>
-        <button>Edit</button>
+        <p>Edit</p>
       </div>
       <div>Progress</div>
       <div>

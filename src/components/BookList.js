@@ -1,5 +1,6 @@
-import React from "react";
-import BookItem from "./BookItem";
+/* eslint-disable */ 
+import React from 'react';
+import BookItem from './BookItem';
 
 function BookList(props) {
   const { bookList } = props;
