@@ -24,8 +24,6 @@ const bookReducer = (state = initialState, action) => {
     case ADD_BOOK:
       return [...state, action.payload];
     case DELETE_BOOK:
-      console.log('before:', state);
-      console.log('after:', [...state.filter((book) => book.id !== action.payload.id)]);
       return [...state.filter((book) => book.id !== action.payload.id)];
     default:
       return state;
