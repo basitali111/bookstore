@@ -1,6 +1,6 @@
 // Action
 
-const STATUS = 'src/catogories/STATUS';
+const STATUS = 'STATUS';
 
 // Action creater
 

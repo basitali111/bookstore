@@ -1,6 +1,7 @@
+import bookList from '../../FakeBookData';
 // Action
-const ADD_BOOK = 'bookstore/books/ADD_BOOK';
-const DELETE_BOOK = 'bookstore/books/DELETE_BOOK';
+const ADD_BOOK = 'ADD_BOOK';
+const DELETE_BOOK = 'DELETE_BOOK';
 
 // Action creators
 
@@ -9,12 +10,12 @@ export const addBook = (book) => ({
   payload: book,
 });
 
-export const deleteBook = (bookId) => ({
+export const deleteBook = (book) => ({
   type: DELETE_BOOK,
-  payload: bookId,
+  payload: book,
 });
 
-const initialState = [];
+const initialState = bookList;
 
 // Defining Reducer
 
@@ -23,7 +24,7 @@ const bookReducer = (state = initialState, action) => {
     case ADD_BOOK:
       return [...state, action.payload];
     case DELETE_BOOK:
-      return [...state.filter((payload) => payload.id !== action.payload.id)];
+      return [...state.filter((book) => book.id !== action.payload.id)];
     default:
       return state;
   }

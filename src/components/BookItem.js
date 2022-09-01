@@ -1,18 +1,21 @@
 /* eslint-disable */ 
 import React from 'react';
-
+import { useDispatch } from 'react-redux';
+import {deleteBook} from '../redux/books/books';
 function BookItem(props) {
-  const { author, title } = props.book;
+  const { book } = props;
+  const dispatch = useDispatch();
+
   return (
     <li>
       <div>
-        <p>Actions</p>
-        <h2>{title}</h2>
-        <p>{author}</p>
+        <p>{book.category}</p>
+        <h2>{book.title}</h2>
+        <p>{book.author}</p>
       </div>
       <div>
         <p>comments</p>
-        <button type="button">Remove</button>
+        <button type="button" onClick ={ () => { dispatch(deleteBook(book)); }}>Remove</button>
         <p>Edit</p>
       </div>
       <div>Progress</div>
