@@ -6,8 +6,8 @@ const NavBar = () => (
     <nav className="nav-bar">
       <p>Bookstore CMS</p>
       <ul className="links-nav">
-        <li><Link to="/"> Books </Link></li>
-        <li><Link to="/Categories"> Categories </Link></li>
+        <li><Link to="/" className="nav-link"> Books </Link></li>
+        <li><Link to="/Categories" className="nav-link"> Categories </Link></li>
       </ul>
     </nav>
   </div>
