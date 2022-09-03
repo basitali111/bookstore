@@ -74,6 +74,10 @@ main {
   right: 10%;
 }
 
+.userlogo {
+  width: 40px;
+}
+
 .links-nav {
   display: flex;
   list-style: none;
@@ -91,7 +95,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 90%;
+  width: 130%;
   padding: 3rem 0;
   gap: 1.5rem;
 }
@@ -107,7 +111,7 @@ main {
 .books-list {
   display: flex;
   flex-direction: column;
-  margin-left: -64px;
+  margin-left: 22px;
   align-items: center;
   width: 90%;
   margin-top: 9rem;
@@ -145,7 +149,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 146%;
   background-color: white;
   padding: 2.5rem;
   border: 1px solid #e8e8e8;

@@ -11,7 +11,7 @@ const NavBar = () => (
         <li><Link to="/Categories" className="nav-link"> Categories </Link></li>
       </ul>
       <div className="user-logo">
-        <img src={userLogo} alt="user icon" />
+        <img className="userlogo" src={userLogo} alt="user icon" />
       </div>
     </nav>
   </div>
