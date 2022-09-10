@@ -33,7 +33,7 @@ Redux
 Jest for testing
 
 ## Live demo
-Not available yet.
+- [Live Demo](https://basit-bookstore.netlify.app/)
 
 
 ## Getting Started
