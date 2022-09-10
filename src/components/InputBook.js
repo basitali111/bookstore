@@ -22,13 +22,15 @@ const InputBook = () => {
   };
 
   return (
-    <div>
-      <h3>Add a new book</h3>
-      <form onSubmit={addBookHandler}>
-        <input type="text" placeholder="Title..." required onInput={(e) => settitle(e.target.value)} />
-        <input type="text" placeholder="author" required onInput={(e) => setauthor(e.target.value)} />
-        <button type="submit">Add book</button>
-      </form>
+    <div className="container">
+      <div className="add-book-section">
+        <h3 className="add-book-section-title">Add a new book</h3>
+        <form className="add-book-form" onSubmit={addBookHandler}>
+          <input className="form-field" type="text" placeholder="Title..." required onInput={(e) => settitle(e.target.value)} />
+          <input className="form-field" type="text" placeholder="author" required onInput={(e) => setauthor(e.target.value)} />
+          <button type="submit" className="add-book-btn">Add book</button>
+        </form>
+      </div>
     </div>
   );
 };
